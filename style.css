@@ -1,179 +1,20 @@
-body { 
-    margin: 0;
-    font-family: arial;
-}
-
-#bungkus {
-    width: 1000px;
-    margin: 20px auto 0;
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
 }
 
 #logo img {
-    width: 80px;
+  width: 80px;
 }
 
-#menu ul {
-    margin: 0;
-    padding: 0;
+/* Tambahan custom CSS untuk komponen Tugas */
+.newsletter-section {
+  background-color: #f70d8a; /* Warna pink sesuai mockup */
 }
-
-#menu ul li {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-    margin-left: 10px;
+.footer-section {
+  background-color: #2c3136; /* Warna gelap footer */
 }
-
-#logo {
-    margin-bottom: 20px;
-}
-
-#menu {
-    margin-top: 50px;
-}
-
-#menu ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 30px 0;
-}
-
-#menu ul li a:hover, #menu ul li a.active {
-    border-bottom: 5px solid;
-}
-
-#top {
-    display: flex;
-    justify-content: space-between;
-}
-
-#banner {
-    height: 400px;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-#banner img{
-    width: 100%;
-}
-
-#highlight {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-#highlight .box{
-    width: 320px;
-    height: 180px;
-    background: gray;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.box img {
-    width: 320px;
-}
-
-/* --- Global Utility untuk Judul Section --- */
-.section-title {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-/* --- 1. Subtitle Content --- */
-#content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-.content-img {
-    width: 40%;
-}
-.content-img img {
-    width: 100%;
-    border-radius: 10px;
-}
-.content-text {
-    width: 55%;
-}
-
-/* --- 2. Our Client --- */
-.client-logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.client-logos img {
-    width: 120px; /* Sesuaikan ukuran dengan gambar asli Anda */
-}
-
-/* --- 3. Testimonials --- */
-.testi-container {
-    display: flex;
-    justify-content: space-between;
-}
-.testi-box {
-    width: 48%;
-    background: #808080;
-    color: black;
-    border-radius: 10px;
-    padding: 30px;
-    box-sizing: border-box;
-    text-align: center;
-}
-.testi-box img {
-    width: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-#newsletter {
-    background: #ff007f; 
-    color: white;
-    text-align: center;
-    padding: 40px;
-    margin-top: 40px;
-    border-radius: 10px;
-}
-#newsletter input {
-    width: 400px;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-}
-#newsletter button {
-    padding: 10px 30px;
-    background: #e6e6e6;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #ff007f;
-}
-
-#footer {
-    background: #333333;
-    color: #cccccc;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    margin-top: 40px;
-    border-radius: 10px;
-}
-.footer-left h4 {
-    color: white;
-    margin-top: 0;
-}
-.footer-right {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.socials img {
-    width: 30px;
-    margin-left: 10px;
+.testimonial-card {
+  background-color: #7b838a; /* Warna abu-abu card testimonial */
 }
