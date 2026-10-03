@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas 1 - Konversi Grade</title>
+</head>
+<body>
+    <script>
+        function getGrade(nilai) {
+            if (nilai >= 85) return "A";
+            else if (nilai >= 80) return "A-";
+            else if (nilai >= 75) return "B+";
+            else if (nilai >= 70) return "B";
+            else if (nilai >= 65) return "B-";
+            else if (nilai >= 60) return "C+";
+            else if (nilai >= 55) return "C";
+            else if (nilai >= 45) return "D";
+            else return "E";
+        }
+
+        let inputNilai = parseFloat(window.prompt("Masukkan Nilai:"));
+        let hasilGrade = getGrade(inputNilai);
+
+        alert("Nilai Anda: " + inputNilai + "\nGrade: " + hasilGrade);
+        document.write("<h3>Hasil Konversi Grade</h3>");
+        document.write("Nilai: " + inputNilai + "<br/>");
+        document.write("Grade: " + hasilGrade);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 4 - Luas dan Keliling</title>
+</head>
+<body>
+    <script>
+        let pilihan = "";
+        while (pilihan !== "luas" && pilihan !== "keliling") {
+            pilihan = prompt("Apa yang hendak dihitung? (luas/keliling)");
+            if (pilihan !== null) {
+                pilihan = pilihan.toLowerCase();
+            }
+        }
+        
+        let panjang = parseFloat(prompt("Masukkan nilai panjang:"));
+        let lebar = parseFloat(prompt("Masukkan nilai lebar:"));
+        
+        if (pilihan === "luas") {
+            let luas = panjang * lebar;
+            alert("Luas area adalah: " + luas);
+        } else if (pilihan === "keliling") {
+            let keliling = 2 * (panjang + lebar);
+            alert("Keliling area adalah: " + keliling);
+        }
+    </script>
+</body>
+</html>

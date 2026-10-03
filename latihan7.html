@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 7 - Grafik Kehadiran</title>
+</head>
+<body>
+    <script>
+        let hari = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat"];
+        let kehadiran = [];
+        
+        for (let i = 0; i < hari.length; i++) {
+            let jumlah = parseInt(prompt("Jumlah mahasiswa yang masuk hari " + hari[i] + ":"));
+            kehadiran.push(jumlah);
+        }
+        
+        document.write("<h3>Grafik Jumlah Kehadiran Mahasiswa</h3>");
+        for (let i = 0; i < hari.length; i++) {
+            document.write(hari[i] + ": ");
+            for (let j = 0; j < kehadiran[i]; j++) {
+                document.write("x");
+            }
+            document.write("<br/>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 6 - Bilangan Prima</title>
+</head>
+<body>
+    <script>
+        let batas = parseInt(prompt("Masukkan angka batas maksimal:"));
+        document.write("<h3>Bilangan Prima dari 1 sampai " + batas + "</h3>");
+        
+        for (let i = 2; i <= batas; i++) {
+            let isPrima = true;
+            for (let j = 2; j < i; j++) {
+                if (i % j === 0) {
+                    isPrima = false;
+                    break;
+                }
+            }
+            if (isPrima) {
+                document.write(i + " ");
+            }
+        }
+    </script>
+</body>
+</html>
